@@ -181,9 +181,12 @@ Write a launch file to run multiple ros nodes. Please make sure the launch file 
 **Do not forget catkin_make in the catkin_ws root directory**
 
 Now open the terminal and enter `roslaunch [package name] [launchfile.launch]`  
+![1](https://github.com/TTrravis/ROS_learning/blob/main/1.png)  
 Enter `rostopic list` to check the published topic  
+![1](https://github.com/TTrravis/ROS_learning/blob/main/2.png)  
 Enter `rostopic ehco /esp32dev` to check the topic content of esp32dev  
 Enter `rostopic echo /esp32pico` to check the topic content of esp32pico
+![1](https://github.com/TTrravis/ROS_learning/blob/main/3.png)  
 ## Problem
 - Error when roslaunch in the terminal
 	Solution: First make sure you are in the catkin_ws root directory. Next make sure you have compiled all the workspace. Any new added files should be compiled, too.

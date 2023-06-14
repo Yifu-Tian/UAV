@@ -196,4 +196,5 @@ Enter `rostopic echo /esp32pico` to check the topic content of esp32pico
 	$ source devel/setup.bash
 	```
 # Reference
-- [1][【esp32&ROS】ROS与多个ESP32的无线连接](https://blog.csdn.net/weixin_43326110/article/details/127695803)
+- [1][rosserial-ROS Wiki](https://wiki.ros.org/rosserial/)
+- [2][【esp32&ROS】ROS与多个ESP32的无线连接](https://blog.csdn.net/weixin_43326110/article/details/127695803)

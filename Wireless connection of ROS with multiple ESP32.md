@@ -89,10 +89,13 @@ void loop()
 ```
 ## Launch on the Host Computer
 Open terminal and enter
-`roscore`
+`roscore`  
+
 Then enter
-`rosrun rosserial_python serial_node.py tcp`
-Enter `rostopic list` to check the topic esp32 have published. 
+`rosrun rosserial_python serial_node.py tcp`  
+
+Enter `rostopic list` to check the topic esp32 have published.  
+
 Also, you can enter `rostopic echo` to check the content of topic if your program include this.
 
 # Connection of ROS with Multiple ESP32
@@ -188,8 +191,11 @@ Enter `rostopic ehco /esp32dev` to check the topic content of esp32dev
 Enter `rostopic echo /esp32pico` to check the topic content of esp32pico
 ![1](https://github.com/TTrravis/ROS_learning/blob/main/pic/3.png)  
 ## Problem
-- Error when roslaunch in the terminal
-	Solution: First make sure you are in the catkin_ws root directory. Next make sure you have compiled all the workspace. Any new added files should be compiled, too.
+- Error when roslaunch in the terminal  
+	Solution:  
+	First make sure you are in the catkin_ws root directory.  
+	Next make sure you have compiled all the workspace.  
+	Any new added files should be compiled, too.  
 	```
 	$ cd ~/catkin_ws/
 	$ catkin_make

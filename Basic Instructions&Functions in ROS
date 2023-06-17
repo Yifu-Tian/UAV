@@ -1,0 +1,25 @@
+# Introduction
+This passage records all the instructions & functions I met during ros learning.
+
+# Main
+
+- roscore
+Used for launching ros master. It should be enter before launch the ros system
+
+- rosrun
+Used for launching the node instruction in a package. It includes two parameter: package_name & node_name
+
+- rosbag
+Used for recording all the topic data in the system, and repeat in the next time.
+
+```
+$ rosbag record -a -O cmd_record
+// -a implies recording all data
+// -O saves the data as compressed package, following a file name
+```
+
+- advertise()
+You tell ROS that you want to publish specific type message on the topic;  
+Then master will inform all the nodes which subscribe this topic, set up a network.
+
+- ros::spin(), ros::spinOnce()

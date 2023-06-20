@@ -1,5 +1,5 @@
 # Abstract
-&emsp;The catcher mmainly consists of a magnets array, a circular support base, an aligning linkage mechanism, and one servo motor.  
+&emsp;The catcher mainly consists of a magnets array, a circular support base, an aligning linkage mechanism, and one servo motor.  
 ![1](https://github.com/TTrravis/ROS_learning/blob/main/pic/正向视野.png)  
 &emsp;Once a metal block enters into the vicinity of this magnetic area, it would be attracted firmly. Afterward, the aligning mechanism would start to shrink into a reduced state. ![2](https://github.com/TTrravis/ROS_learning/blob/main/pic/张开俯视.png)  
 &emsp;This is an alignment process in which the metal block would be forced to move to the center of the support base.

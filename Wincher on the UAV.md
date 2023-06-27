@@ -1,6 +1,6 @@
 # Abstract
 ## Winch System
-![1]()
+![1](https://github.com/TTrravis/ROS_learning/blob/main/pic/%E6%94%B6%E6%94%BE%E7%BB%B3%E5%AD%90V2.JPG)
 &emsp;The winch system on UAV consists of a support base, a motor with a reducer, a winch and a tethered metal block.
 The winch system can be easily strapped to the abdomen of various UAVs and it is reponsible for two tasks.  
 &emsp;First, the winch system releases the metal block which is like a "decoy" to the magnetic catcher to establish a connection.  

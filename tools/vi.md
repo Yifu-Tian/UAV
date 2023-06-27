@@ -31,4 +31,4 @@
       1. q 退出程序
       2. w 保存文件
 # 参考
-https://www.runoob.com/linux/linux-vim.html
+[Linux vi/vim教程](https://www.runoob.com/linux/linux-vim.html)

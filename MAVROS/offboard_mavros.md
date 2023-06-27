@@ -1,7 +1,9 @@
 # 前言
 标题起的有些潦草, 主要原因是尚未了解offboard与mavros二者联系, 日后会更改调整, 以起到更好的概括作用
-# 什么是offboard
+# 什么是offboard模式
 - offboard是一种无人机的飞行模式, 主要用于控制飞机运动和姿态, 目前仅支持MAVLink消息的一个小部分.
+- 通过遥控器切入offboard模式, 这时无人机只听从板载计算机发来的mavlink消息, 必须遥控器切出iffboard模式, 遥控器才能换为遥控器控制无人机
+- 切换至offboard模式后, 板载计算机发送指令无人机将会响应
 - offboard模式需要主动连接到远程MAVLink系统
 
 # 官方offboard例程

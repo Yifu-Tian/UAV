@@ -40,8 +40,8 @@ urdf_to_graphiz mrobot_chassis.urdf
 
 </launch>
 ```
-
-
-
+在终端中运行该launch文件
+### 问题
+出现RLE报错
 
 对于机器人模型(urdf描述), 需要对每一个link添加<gazebo>标签, 才能让模型在Gazebo仿真环境中动起来

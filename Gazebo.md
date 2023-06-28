@@ -80,6 +80,7 @@ xacro文件可以使用宏定义来声明重复使用的代码模块
    ```
    roslaunch mrobot_description display_mrobot.launch
    ```
+![Screenshot from 2023-06-28 14-44-12](https://github.com/Travis-alt/UAV/assets/102942951/eb3bcdfb-995a-45ed-89be-8a66d1d923d2)
 
 
 

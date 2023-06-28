@@ -20,7 +20,25 @@ urdf_to_graphiz mrobot_chassis.urdf
 使用rviz将模型可视化显示出来
 需要创建用于显示模型的launch文件, 如diaplay_mrobot_chassis_urdf.launch(放在功能包的launch文件夹中)
 ```launch
+<launch>
+	<arg name="model" default="$(find xacro)/xacro --inorder '$(find mrobot_description)/urdf/mrobot_with_rplidar.urdf.xacro'" />
+	<arg name="gui" default="true" />
 
+	<param name="robot_description" command="$(arg model)" />
+
+    <!-- 设置GUI参数，显示关节控制插件 -->
+	<param name="use_gui" value="$(arg gui)"/>
+
+    <!-- 运行joint_state_publisher节点，发布机器人的关节状态  -->
+	<node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+
+	<!-- 运行robot_state_publisher节点，发布tf  -->
+	<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+
+    <!-- 运行rviz可视化界面 -->
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find mrobot_description)/config/mrobot.rviz" required="true" />
+
+</launch>
 ```
 
 

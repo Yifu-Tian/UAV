@@ -43,5 +43,6 @@ urdf_to_graphiz mrobot_chassis.urdf
 在终端中运行该launch文件
 ### 问题
 出现RLE报错
+![Screenshot from 2023-06-28 12-16-04](https://github.com/Travis-alt/UAV/assets/102942951/a4f6453a-f522-454a-8018-c2197ac0f5b4)
 
 对于机器人模型(urdf描述), 需要对每一个link添加<gazebo>标签, 才能让模型在Gazebo仿真环境中动起来

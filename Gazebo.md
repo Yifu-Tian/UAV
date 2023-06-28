@@ -82,23 +82,18 @@ xacro文件可以使用宏定义来声明重复使用的代码模块
    ```
 ![Screenshot from 2023-06-28 14-44-12](https://github.com/Travis-alt/UAV/assets/102942951/eb3bcdfb-995a-45ed-89be-8a66d1d923d2)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 对于机器人模型(urdf描述), 需要对每一个link添加<gazebo>标签, 才能让模型在Gazebo仿真环境中动起来
+# Gazebo
+## 在Gazebo中显示模型
+创建启动文件view_mrobot_gazebo.launch
+在终端中编译后, 输入命令
+```
+roslaunch mrobot_gazebo view_mrobot_gazebo.launch
+```
+## 控制机器人在Gazebo中的运动
+发布键盘控制节点
+```
+roslaunch mrobot_teleop mrobot_teleop.launch
+```
+### 问题
+可能会遇到如下报错

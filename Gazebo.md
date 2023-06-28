@@ -44,5 +44,14 @@ urdf_to_graphiz mrobot_chassis.urdf
 ### 问题
 出现RLE报错
 ![Screenshot from 2023-06-28 12-16-04](https://github.com/Travis-alt/UAV/assets/102942951/a4f6453a-f522-454a-8018-c2197ac0f5b4)
+### 解决
+问题在于, 不能简单复制别人的功能包就完事了. 
+首先需要把功能包放在工作空间的src文件夹中, 然后回到工作空间根目录下编译
+```
+catkin_make
+source devel/setup.bash
+```
+最后再在终端中执行之前的命令即可
 
+## 改进URDF模型
 对于机器人模型(urdf描述), 需要对每一个link添加<gazebo>标签, 才能让模型在Gazebo仿真环境中动起来

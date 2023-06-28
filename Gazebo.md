@@ -98,3 +98,5 @@ roslaunch mrobot_teleop mrobot_teleop.launch
 ### 问题
 可能会遇到如下报错
 ![image](https://github.com/Travis-alt/UAV/assets/102942951/e7d1d7b2-8762-486c-920a-050a48f25e68)
+### 解决
+需要把mrobot_teleop.py改成可执行文件, 右键文件进入属性, 在权限的Execute:Allow execute file as program打勾即可

@@ -54,4 +54,50 @@ source devel/setup.bash
 最后再在终端中执行之前的命令即可
 
 ## 改进URDF模型
+
+添加物理属性和碰撞属性, 加入<inertia>和<collision>标签
+### 使用xacro优化urdf
+- xacro是一个精简版本的URDF文件, 在xacro文件中, 可以通过创建宏定义的方式定义常量或复用代码, 可以减少代码量, 让模型代码具有可读性
+- xacro的语法支持一些可编程接口, 如常量, 变量, 数学公式等
+
+### 使用常量定义
+xacro提供了一种常量属性的定义方式:
+```xacro
+<xacro:property name="M_PI" value="3.14159" />
+```
+如果要使用该常量, 使用如下语法调用:
+```xacro
+<origin xyz="0 0 0" rpy="${M_PI/2} 0 0" />
+```
+如果需要对机器人模型进行调参,只需要修改这些参数即可
+### 使用宏定义
+xacro文件可以使用宏定义来声明重复使用的代码模块
+
+## 在rviz中显示优化后的模型
+1. 将xacro文件转换成URDF文件
+2. 直接调用xacro文件解析器
+   在launch文件中调用xacro解析器, 自动将xacro转换成URDF文件
+   ```
+   roslaunch mrobot_description display_mrobot.launch
+   ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 对于机器人模型(urdf描述), 需要对每一个link添加<gazebo>标签, 才能让模型在Gazebo仿真环境中动起来

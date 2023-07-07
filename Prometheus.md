@@ -8,4 +8,5 @@
 - 另外
   Prometheus包放在home下
 
-#
+# Prometheus
+![Screenshot from 2023-07-07 16-26-22](https://github.com/Travis-ovo/UAV/assets/102942951/558291a7-2e5a-47ef-852a-0e8c19784c4f)

@@ -8,5 +8,12 @@
 - 另外
   Prometheus包放在home下
 
-# Prometheus
+# Prometheus代码框架
 ![Screenshot from 2023-07-07 16-26-22](https://github.com/Travis-ovo/UAV/assets/102942951/558291a7-2e5a-47ef-852a-0e8c19784c4f)
+
+- Modules: 各模块功能的源代码
+- Simulator: 仿真飞行相关代码
+- Experiment: 真实飞行相关代码
+
+# PX4编译环境配置及固件代码安装
+Prometheus项目中的Gazebo仿真模块依赖PX4固件及sitl_gazebo包，因此需先配置PX4编译环境。

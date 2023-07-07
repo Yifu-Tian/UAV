@@ -17,3 +17,4 @@
 
 # PX4编译环境配置及固件代码安装
 Prometheus项目中的Gazebo仿真模块依赖PX4固件及sitl_gazebo包，因此需先配置PX4编译环境。
+![Screenshot from 2023-07-07 18-31-09](https://github.com/Travis-ovo/UAV/assets/102942951/1fcec2f2-1422-4788-b914-a42ca55e7969)

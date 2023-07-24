@@ -15,7 +15,9 @@ This repository stores all the things I learned during 2023 summer in AIRS Lab
 - 学习positionController(存疑)
 
 # Prometheus
-- 仿真运行(未完成)
+- [Prometheus代码框架](https://github.com/Travis-ovo/UAV/blob/f7f44b3caa62170d22400959a427c20302fb758d/Prometheus/README.md)
+- [无人机控制模块](https://github.com/Travis-ovo/UAV/blob/f7f44b3caa62170d22400959a427c20302fb758d/Prometheus/%E6%97%A0%E4%BA%BA%E6%9C%BA%E6%8E%A7%E5%88%B6%E6%A8%A1%E5%9D%97.md)
+- [仿真](https://github.com/Travis-ovo/UAV/blob/f7f44b3caa62170d22400959a427c20302fb758d/Prometheus/Simulation.md)
 
 # UAV Landing System
 - [Catcher on the UAV Landing Platform](https://github.com/Travis-ovo/UAV/blob/1049a85ff3744c3157b1c68b36449a2130d7fbec/UAV%20Landing%20System/Catcher%20on%20the%20UAV%20Landing%20Platform.md)

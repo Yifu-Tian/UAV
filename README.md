@@ -22,3 +22,7 @@ This repository stores all the things I learned during 2023 summer in AIRS Lab
 - [Wincher on the UAV](https://github.com/Travis-ovo/UAV/blob/1049a85ff3744c3157b1c68b36449a2130d7fbec/UAV%20Landing%20System/Wincher%20on%20the%20UAV.md)
 - [Wireless connection of ROS with multiple ESP32](https://github.com/Travis-ovo/UAV/blob/1049a85ff3744c3157b1c68b36449a2130d7fbec/UAV%20Landing%20System/Wireless%20connection%20of%20ROS%20with%20multiple%20ESP32.md)
 - [Keyboard_Control](https://github.com/Travis-ovo/UAV/blob/1049a85ff3744c3157b1c68b36449a2130d7fbec/UAV%20Landing%20System/Keyboard_Control.md)
+
+# Tools
+Some basic tools needed during developing~
+- [vi/vim](https://github.com/Travis-ovo/UAV/blob/19a525d0e33084730ba50a3dc3b7cc126c95e7f4/tools/vi%26vim%E7%AE%80%E6%98%93%E6%95%99%E7%A8%8B.md)

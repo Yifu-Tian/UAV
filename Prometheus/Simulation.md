@@ -117,17 +117,19 @@ Gazebo为我们提供了一个物理环境的模拟系统，例如无人机以�
 - 无人机控制模块例程的运行见另一篇文章
 
 # 导入平面图
-![image](https://github.com/Travis-ovo/UAV/assets/102942951/ed7ea0f4-3122-4ae6-b0f6-86008989e14c)
 
 ## Gazebo添加门窗模型时出现卡退
 
-经过查找网上资料, 得知是Gazebo9的bug, 于是乎卸载Gazebo9, 安装Gazebo11\
+经过查找网上资料, 得知是Gazebo9的bug, 于是乎卸载Gazebo9, 安装Gazebo11
 
 1. 首先, 查看Gazebo版本`dpkg -l | grep gazebo`
 2. 卸载全部插件`$ sudo apt-get remove gazebo9 gazebo9-common gazebo9-plugin-base libgazebo9:amd64 libgazebo9-dev:amd64 ros-melodic-gazebo-*`
 3. 如果卸载不干净, 使用以下命令删除参与配置信息`sudo apt-get purge gazebo9 gazebo9-common gazebo9-plugin-base libgazebo9:amd64 libgazebo9-dev:amd64 ros-melodic-gazebo-*`
-4. 配置镜像`sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'`
-5. 通过下述命令查看文件是否写入正确, 如果正确会出现deb http://packages.osrfoundation.org/gazebo/ubuntu-stable bionic main\
+4. 配置镜像
+   ```
+   sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'
+   ```
+6. 通过下述命令查看文件是否写入正确, 如果正确会出现deb http://packages.osrfoundation.org/gazebo/ubuntu-stable bionic main\
 ```
 cat /etc/apt/sources.list.d/gazebo-stable.list
 ```

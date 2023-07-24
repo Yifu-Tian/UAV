@@ -119,7 +119,27 @@ Gazebo为我们提供了一个物理环境的模拟系统，例如无人机以�
 # 导入平面图
 ![image](https://github.com/Travis-ovo/UAV/assets/102942951/ed7ea0f4-3122-4ae6-b0f6-86008989e14c)
 
+## Gazebo添加门窗模型时出现卡退
 
+经过查找网上资料, 得知是Gazebo9的bug, 于是乎卸载Gazebo9, 安装Gazebo11\
+
+1. 首先, 查看Gazebo版本`dpkg -l | grep gazebo`
+2. 卸载全部插件`$ sudo apt-get remove gazebo9 gazebo9-common gazebo9-plugin-base libgazebo9:amd64 libgazebo9-dev:amd64 ros-melodic-gazebo-*`
+3. 如果卸载不干净, 使用以下命令删除参与配置信息`sudo apt-get purge gazebo9 gazebo9-common gazebo9-plugin-base libgazebo9:amd64 libgazebo9-dev:amd64 ros-melodic-gazebo-*`
+4. 配置镜像`sudo sh -c 'echo "deb http://packages.osrfoundation.org/gazebo/ubuntu-stable `lsb_release -cs` main" > /etc/apt/sources.list.d/gazebo-stable.list'`
+5. 通过下述命令查看文件是否写入正确, 如果正确会出现deb http://packages.osrfoundation.org/gazebo/ubuntu-stable bionic main\
+```
+cat /etc/apt/sources.list.d/gazebo-stable.list
+```
+6. 设置key`wget https://packages.osrfoundation.org/gazebo.key -O - | sudo apt-key add -`
+7. 更新 the debian database`sudo apt-get update`
+8. 安装gazebo11
+```
+sudo apt-get install gazebo11
+sudo apt-get install libgazebo11-dev
+```
+9. 安装gazebo的ros插件`sudo apt install ros-melodic-gazebo11-*`
+10. 检查gazebo是否安装成功`gazebo`
 ## 终端控制台异常
 根据控制台提示输入1切换为键盘控制后, 输入1切换为arm状态后输入4无法起飞, 但终端显示"Switch to Takeoff Mode"
 ![Screenshot from 2023-07-24 11-41-52](https://github.com/Travis-ovo/UAV/assets/102942951/2c2b7b36-d80d-4a99-a48c-a0c41a3b8239)

@@ -4,7 +4,7 @@ This repository stores all the things I learned during 2023 summer in AIRS Lab
 # MAVROS
 
 ## 常用的mavros消息类型
-- 学习什么是MAVROS(用于将ROS和MAVLink协议连接起来)
+- 学习什么是MAVROS(一个用于将ROS和MAVLink协议连接起来的功能包)
 - mavros订阅消息, mavros发布消息以及mavros服务
 
 ## offboard_mavros

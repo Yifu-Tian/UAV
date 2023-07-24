@@ -1,5 +1,6 @@
 
 # 什么是offboard模式
+[PX4 自动驾驶用户指南/Offboard模式](https://docs.px4.io/main/zh/flight_modes/offboard.html)
 - offboard是一种无人机的飞行模式, 主要用于控制飞机运动和姿态, 目前仅支持MAVLink消息的一个小部分.
 - 通过遥控器切入offboard模式, 这时无人机只听从板载计算机发来的mavlink消息, 必须遥控器切出iffboard模式, 遥控器才能换为遥控器控制无人机
 - 切换至offboard模式后, 板载计算机发送指令无人机将会响应

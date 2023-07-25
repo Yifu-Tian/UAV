@@ -145,3 +145,14 @@ sudo apt-get install libgazebo11-dev
 ## 终端控制台异常
 根据控制台提示输入1切换为键盘控制后, 输入1切换为arm状态后输入4无法起飞, 但终端显示"Switch to Takeoff Mode"
 ![Screenshot from 2023-07-24 11-41-52](https://github.com/Travis-ovo/UAV/assets/102942951/2c2b7b36-d80d-4a99-a48c-a0c41a3b8239)
+
+## 输入999后飞机不转动(之前可以), 报错MODE: Unsupported FCU, 并且mavros连接状态为False
+### 可能原因: mavros的launch文件的设备名称和端口号有问题
+需要将mavros的launch文件的端口号和要运行的launch文件端口号写成相同的
+找到一种解决办法如下:  
+<img width="599" alt="image" src="https://github.com/Travis-ovo/UAV/assets/102942951/9305f2e1-4562-4756-ae2e-9a85bb10279b">
+但仍未解决  
+127.0.0.1地址称为本地回环地址, 是一种特殊的网络地址, 让单独的计算机进行自我回路测试和通信
+### 检查mavros
+用rostopic echo /mavros/state发现连接状态是false，说明用roslaunch启动仿真时，MAVROS没能正确的连接到PX4，也就是MAVROS没有与PX4固件SITL建立通信。
+## 报错SpawnModel: Failure - model name p450 already exist

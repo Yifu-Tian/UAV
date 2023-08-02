@@ -154,8 +154,8 @@ sudo apt-get install libgazebo11-dev
 
 需要将mavros的launch文件的端口号和要运行的launch文件端口号写成相同的
 找到一种解决办法如下:  
-<img width="599" alt="image" src="https://github.com/Travis-ovo/UAV/assets/102942951/9305f2e1-4562-4756-ae2e-9a85bb10279b">
-但仍未解决  
+<img width="599" alt="image" src="https://github.com/Travis-ovo/UAV/assets/102942951/9305f2e1-4562-4756-ae2e-9a85bb10279b">  
+但仍未解决  (后来重新配置环境发现不是这个问题)
 127.0.0.1地址称为本地回环地址, 是一种特殊的网络地址, 让单独的计算机进行自我回路测试和通信
 ### 检查mavros
 用rostopic echo /mavros/state发现连接状态是false，说明用roslaunch启动仿真时，MAVROS没能正确的连接到PX4，也就是MAVROS没有与PX4固件SITL建立通信。

@@ -104,11 +104,6 @@ export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:{your px4 path}/prometheus_px4/Tools/s
 顺便找到了学校的位置^_^  
 ![Screenshot from 2023-07-19 11-33-12](https://github.com/Travis-ovo/UAV/assets/102942951/cf2f98c1-66f3-4dfe-aa21-9c3072f3928e)
 
-# 基于PX4的旋翼无人机系统简单介绍
-![image](https://github.com/Travis-ovo/UAV/assets/102942951/aff40b4d-97c7-4a5a-abbb-195f6c760354)
-![1652374810652053942665216](https://github.com/Travis-ovo/UAV/assets/102942951/b3e1bbdf-bd9d-47c2-9bcf-f6bc82cac199)
-Gazebo为我们提供了一个物理环境的模拟系统，例如无人机以及飞行环境的可视化、物理属性、碰撞属性等。  
-基于PX4-Gazebo的仿真系统能够完全实现无人机飞行控制的全部功能，除了性能，其余方面与真机表现并无差异.可以简单理解为Gazebo提供无人机硬件仿真，而PX4提供飞控仿真，当然无人机硬件仿真也是由PX4项目组完成，Gazebo仅仅是提供一个物理仿真平台。
 
 # 无人机控制模块&官方例程运行
 - uav_control包含两个功能模块uav_controller和uav_estimator  
@@ -159,4 +154,9 @@ sudo apt-get install libgazebo11-dev
 127.0.0.1地址称为本地回环地址, 是一种特殊的网络地址, 让单独的计算机进行自我回路测试和通信
 ### 检查mavros
 用rostopic echo /mavros/state发现连接状态是false，说明用roslaunch启动仿真时，MAVROS没能正确的连接到PX4，也就是MAVROS没有与PX4固件SITL建立通信。
+
+### 解决!
+换了台电脑运行发现这个报错, 按照下图所示安装后再运行即可起飞(但原电脑无报错仍无法起飞, 应该还是电脑问题)
+<img width="547" alt="image" src="https://github.com/Travis-ovo/UAV/assets/102942951/9e66422e-1303-4abe-a490-0ddad6e574f1">
+
 ## 报错SpawnModel: Failure - model name p450 already exist
